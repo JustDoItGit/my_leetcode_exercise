@@ -5,8 +5,6 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        if not nums:
-            return []
         _dict = {}
         for i, m in enumerate(nums):
             if _dict.get(target - m) is not None:
